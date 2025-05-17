@@ -43,7 +43,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/DanyalAnsari/Backend-Express.js-Template
+git clone https://github.com/DanyalAnsari/Backend-Express.js-Template.git
 ```
 
 2. Install dependencies:
