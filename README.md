@@ -1,6 +1,4 @@
 # Backend Express.js Template
-
-Users\Danyal Ansari\Projects\Backend-template\READme.md
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
