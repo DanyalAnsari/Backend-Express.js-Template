@@ -3,20 +3,29 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "#app/*": [
+        "./app/*.js"
+      ],
       "#config/*": [
-        "./config/*.js"
+        "./config//*.js"
       ],
       "#env/*": [
         "./config/*.env"
+      ],
+      "#services/*": [
+        "./services/*.js"
+      ],
+      "#routes/*": [
+        "./src/routes/*.js"
+      ],
+      "#middlewares/*": [
+        "./src/middlewares/*.js"
       ],
       "#models/*": [
         "./models/*.js"
       ],
       "#controllers/*": [
         "./controllers/*.js"
-      ],
-      "#services/*": [
-        "./services/*.js"
       ],
       "#utils/*": [
         "./utils/*.js"

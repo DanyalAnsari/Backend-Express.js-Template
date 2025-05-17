@@ -8,20 +8,34 @@
 	"main": "server.js",
 	"imports": {
 		"#root/*": "./*.js",
-		"#config/*": "./config/*/*.js",
+		"#app/*": "./app/*.js",
+		"#config/*": "./config/*.js",
 		"#env/*": "./config/*.env",
-		"#models/*": "./models/*.js",
-		"#controllers/*": "./controllers/*.js",
-		"#utils/*": "./utils/*.js",
-		"#services/*": "./services/*.js"
+		"#services/*": "./services/*.js",
+		"#routes/*": "./src/routes/*.js",
+		"#models/*": "./src/models/*.js",
+		"#middlewares/*": "./src/middlewares/*.js",
+		"#controllers/*": "./src/controllers/*.js",
+		"#utils/*": "./utils/*.js"
 	},
 	"scripts": {
 		"dev": "nodemon server.js",
 		"start": "node server.js"
 	},
 	"dependencies": {
+		"compression": "^1.8.0",
+		"cors": "^2.8.5",
 		"dotenv": "^16.5.0",
 		"express": "^5.1.0",
-		"winston": "^3.17.0"
+		"express-async-errors": "^3.1.1",
+		"express-mongo-sanitize": "^2.2.0",
+		"express-rate-limit": "^7.5.0",
+		"helmet": "^8.1.0",
+		"hpp": "^0.2.3",
+		"http-errors": "^2.0.0",
+		"mongoose": "^8.15.0",
+		"morgan": "^1.10.0",
+		"winston": "^3.17.0",
+		"xss-clean": "^0.1.4"
 	}
 }

@@ -1,9 +1,11 @@
 import logger from "#services/logger";
-import app from "#root/app";
-const initializeServer = (app) => {
+import app from "#app/app";
+import DB from "#root/database/mongo";
+const initializeServer =async (app) => {
 	const PORT = process.env.PORT;
 	const NODE_ENV = process.env.NODE_ENV;
 	try {
+		await DB.connect()
 		// Start server
 		const server = app.listen(PORT, () => {
 			logger.info(`Server running in ${NODE_ENV} mode on port ${PORT}`);
