@@ -2,7 +2,7 @@
 	"name": "backend-template",
 	"version": "1.0.0",
 	"description": "The overall template for Express-App development containing basic configurations and structure for API development.",
-	"license": "ISC",
+	"license": "MIT",
 	"author": "Danyal Ansari",
 	"type": "module",
 	"main": "server.js",
