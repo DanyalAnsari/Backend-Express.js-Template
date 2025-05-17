@@ -1,0 +1,29 @@
+// jsconfig.json at project root
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#config/*": [
+        "./config/*.js"
+      ],
+      "#env/*": [
+        "./config/*.env"
+      ],
+      "#models/*": [
+        "./models/*.js"
+      ],
+      "#controllers/*": [
+        "./controllers/*.js"
+      ],
+      "#services/*": [
+        "./services/*.js"
+      ],
+      "#utils/*": [
+        "./utils/*.js"
+      ],
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

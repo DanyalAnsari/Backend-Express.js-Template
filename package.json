@@ -1,0 +1,27 @@
+{
+	"name": "backend-template",
+	"version": "1.0.0",
+	"description": "The overall template for Express-App development containing basic configurations and structure for API development.",
+	"license": "ISC",
+	"author": "Danyal Ansari",
+	"type": "module",
+	"main": "server.js",
+	"imports": {
+		"#root/*": "./*.js",
+		"#config/*": "./config/*/*.js",
+		"#env/*": "./config/*.env",
+		"#models/*": "./models/*.js",
+		"#controllers/*": "./controllers/*.js",
+		"#utils/*": "./utils/*.js",
+		"#services/*": "./services/*.js"
+	},
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"winston": "^3.17.0"
+	}
+}
